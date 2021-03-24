@@ -1,6 +1,5 @@
 const express = require("express")
 const app = express()
-const BOT_TOKEN = process.env.BOT_TOKEN;
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
@@ -58,4 +57,4 @@ client.on("message", message => {
 	}
 })
 
-client.login(BOT_TOKEN);
+client.login(process.env.token);
